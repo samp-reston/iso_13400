@@ -1,0 +1,6 @@
+[package]
+name = "bsi_iso_13400"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
