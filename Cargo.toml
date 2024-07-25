@@ -7,7 +7,6 @@ description = "Implementation of ISO-13400"
 readme = "README.md"
 repository = "https://github.com/samp-reston/iso_13400"
 license = "MIT"
-license-file = "LICENSE"
 keywords = ["iso", "doip", "automotive", "13400", "networking"]
 categories = [
   "data-structures",
