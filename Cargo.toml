@@ -1,6 +1,21 @@
 [package]
-name = "bsi_iso_13400"
-version = "0.1.0"
+name = "iso_13400"
+version = "0.0.1"
+authors = ["Samuel Preston <samp.reston@outlook.com>"]
 edition = "2021"
+description = "Implementation of ISO-13400"
+readme = "README.md"
+repository = "https://github.com/samp-reston/iso_13400"
+license = "MIT"
+license-file = "LICENSE"
+keywords = ["iso", "doip", "automotive", "13400", "networking"]
+categories = [
+  "data-structures",
+  "development-tools",
+  "embedded",
+  "network-programming",
+  "parsing",
+]
+
 
 [dependencies]
