@@ -1,228 +1,228 @@
-// Definitions for ISO 13400
+/// Term Definitions for ISO 13400
 pub mod definitions {
-    /// Controller Area Network (CAN) // Network with ECUs exchanging data frames
+    /// Network with ECUs exchanging data frames
     pub struct ControllerAreaNetwork;
 
-    /// DoIP entity // host that implements the DoIP protocol
+    /// Host that implements the DoIP protocol
     pub struct DoIPEntity;
 
-    /// DoIP gateway // Host inside the vehicle which implements the DoIP protocol and thereby provides access to itself and the ECUs of its connected vehicle subnetworks
+    /// Host inside the vehicle which implements the DoIP protocol and thereby provides access to itself and the ECUs of its connected vehicle subnetworks
     pub struct DoIPGateway;
 
-    /// DoIP Node // Host inside the vehicle which implements the DoIP protocol to provide access to itself but does not route DoIP protocol data to the vehicle subnetworks
+    /// Host inside the vehicle which implements the DoIP protocol to provide access to itself but does not route DoIP protocol data to the vehicle subnetworks
     pub struct DoIPNode;
 
-    /// External Programming Equipment // Off-vehicle device which is used to programme vehicle subsystem ECUs with changed software; a subset of external test equipment
+    /// Off-vehicle device which is used to programme vehicle subsystem ECUs with changed software; a subset of external test equipment
     pub struct ExternalProgrammingEquipment;
 
-    /// External Test Equipment // Off-vehicle device which is used to obtain information from vehicle subsystem during the act of performing manufacturing, maintenance, diagnostics, and repair.
+    /// Off-vehicle device which is used to obtain information from vehicle subsystem during the act of performing manufacturing, maintenance, diagnostics, and repair.
     pub struct ExternalTestEquipment;
 
-    /// Internet Protocol (IP) // Protocol for packet-switched end-to-end data communication over various transport media
+    /// Protocol for packet-switched end-to-end data communication over various transport media
     pub struct InternetProtocol;
 
-    /// Network Address Translation (NAT) // Process of modifying network addresses in IP datagram headers while routing.
+    /// Process of modifying network addresses in IP datagram headers while routing.
     pub struct NetworkAddressTranslation;
 
-    /// Transport Control Protocol (TCP) // Transport protocol for connection-oriented data communication via an IP network
+    /// Transport protocol for connection-oriented data communication via an IP network
     pub struct TransportControlProtocol;
 
-    /// User Datagram Protocol (UDP) // Transport protocol for connectionless data communication via an IP network'
+    /// Transport protocol for connectionless data communication via an IP network'
     pub struct UserDatagramProtocol;
 
-    /// Diagnostic Power Mode // Abstract vehicle internal power supply state, which affects the diagnostic capabilities of all servers on the in-vehicle networks and which identifies the state of all servers of all gateway sub-networks that allow diagnostic communication.
+    /// Abstract vehicle internal power supply state, which affects the diagnostic capabilities of all servers on the in-vehicle networks and which identifies the state of all servers of all gateway sub-networks that allow diagnostic communication.
     pub struct DiagnosticPowerMode;
 
-    /// DoIP Edge Node // Host inside the vehicle, where an Ethernet activation line is terminated and where the link from the first node/host in the external network is terminated.
+    /// Host inside the vehicle, where an Ethernet activation line is terminated and where the link from the first node/host in the external network is terminated.
     pub struct DoIPEdgeNode;
 
-    /// DoIP Entity Certificate // Certificate issued by an intermediate CA to the CoIP entity presented during the TLS handshake to the client DoIP entity to verify the authenticity of this DoIP entity.
+    /// Certificate issued by an intermediate CA to the CoIP entity presented during the TLS handshake to the client DoIP entity to verify the authenticity of this DoIP entity.
     pub struct DoIPEntityCertificate;
 
-    /// Host // Node connected to the IP-based network.
+    /// Node connected to the IP-based network.
     pub struct Host;
 
-    /// Intermediate Certificate Authority (Intermediate CA) // Authority, which issues subordinal certificates to another intermediate CA or DoIP entities.
+    /// Authority, which issues subordinal certificates to another intermediate CA or DoIP entities.
     pub struct IntermediateCertificateAuthority;
 
-    /// Intermediate Certificate // Certificate either stored in the client DoIP entity or is presented during authentication together with the end node certificate to complete the chain of trust.
+    /// Certificate either stored in the client DoIP entity or is presented during authentication together with the end node certificate to complete the chain of trust.
     pub struct IntermediateCertificate;
 
-    /// Invalid Source Address // Address outside the reserved range for client(s) DoIP entity.
+    /// Address outside the reserved range for client(s) DoIP entity.
     pub struct InvalidSourceAddress;
 
-    /// Logical Address // Address identifying a diagnostic application layer entity.
+    /// Address identifying a diagnostic application layer entity.
     pub struct LogicalAddress;
 
-    /// Network Node // Device connected to the IP-based network (e.g. Ethernet) and which communicates using Internet protocol but does not implement the DoIP protocol.
+    /// Device connected to the IP-based network (e.g. Ethernet) and which communicates using Internet protocol but does not implement the DoIP protocol.
     pub struct NetworkNode;
 
-    /// Root Certificate Authority // Authority, which acts as the root of trust.
+    /// Authority, which acts as the root of trust.
     pub struct RootCertificateAuthority;
 
-    /// Root Certificate // Certificate created by the root certificate authority and used as the trust anchor.
+    /// Certificate created by the root certificate authority and used as the trust anchor.
     pub struct RootCertificate;
 
-    /// Socket // Unique identification, as defined in IETF RFC 147, to or from which information is transmitted in the network.
+    /// Unique identification, as defined in IETF RFC 147, to or from which information is transmitted in the network.
     pub struct Socket;
 
-    /// Unknown Source Address // Address not listed in the connection table entry.
+    /// Address not listed in the connection table entry.
     pub struct UnknownSourceAddress;
 
-    /// Vehicle Sub-Network // Network not directly connected to the IP-based network.
+    /// Network not directly connected to the IP-based network.
     pub struct VehicleSubNetwork;
 }
 
-// Abbreviated Terms for ISO 13400
+/// Abbreviated Terms for ISO 13400
 pub mod abbreviated_terms {
-    /// AL // Application Layer
+    /// Application Layer
     pub struct AL;
 
-    /// Alt // Alternative
+    /// Alternative
     pub struct Alt;
 
-    /// APP // Application
+    /// Application
     pub struct APP;
 
-    /// ARP // Address resolution protocol
+    /// Address resolution protocol
     pub struct ARP;
 
-    /// ASCII // American standard code for information interchange
+    /// American standard code for information interchange
     pub struct ASCII;
 
-    /// Auto-MDI(X) // Automatic medium-dependent interface crossover
+    /// Auto-MDI(XAutomatic medium-dependent interface crossover
     pub struct AutoMDIX;
 
-    /// CA // Certificate Authority
+    /// Certificate Authority
     pub struct CA;
 
-    /// CAN // Controller Area Network
+    /// Controller Area Network
     pub struct CAN;
 
-    /// CF // Consecutive Frame
+    /// Consecutive Frame
     pub struct CF;
 
-    /// DHCP // Dynamic Host Control Protocol
+    /// Dynamic Host Control Protocol
     pub struct DHCP;
 
-    /// DLL // Data Link Layer
+    /// Data Link Layer
     pub struct DLL;
 
-    /// DNS // Domain Name System
+    /// Domain Name System
     pub struct DNS;
 
-    /// DoIP // Diagnostic Communication over Internet Protocol
+    /// Diagnostic Communication over Internet Protocol
     pub struct DoIP;
 
-    /// ECU // Electronic Control Unit
+    /// Electronic Control Unit
     pub struct ECU;
 
-    /// EID // Entity Identification
+    /// Entity Identification
     pub struct EID;
 
-    /// FF // First Frame
+    /// First Frame
     pub struct FF;
 
-    /// FMI // Failure Mode Indicator
+    /// Failure Mode Indicator
     pub struct FMI;
 
-    /// GID // Group Identification
+    /// Group Identification
     pub struct GID;
 
-    /// GUI // Graphical User Interface
+    /// Graphical User Interface
     pub struct GUI;
 
-    /// GW // Gateway
+    /// Gateway
     pub struct GW;
 
-    /// IANA // Internet Assigned Numbers Authority
+    /// Internet Assigned Numbers Authority
     pub struct IANA;
 
-    /// ICMP // Internet Control Message Protocol
+    /// Internet Control Message Protocol
     pub struct ICMP;
 
-    /// IETF RFC // Internet Engineering Task Force Request for Comments
+    /// IETF Internet Engineering Task Force Request for Comments
     pub struct IETFRFC;
 
-    /// IP // Internet Protocol
+    /// Internet Protocol
     pub struct IP;
 
-    /// IPv4 // Internet Protocol Version 4
+    /// Internet Protocol Version 4
     pub struct IPv4;
 
-    /// IPv6 // Internet Protocol Version 6
+    /// Internet Protocol Version 6
     pub struct IPv6;
 
-    /// MAC // Media Access Control
+    /// Media Access Control
     pub struct MAC;
 
-    /// MSC // Message Sequence Chart
+    /// Message Sequence Chart
     pub struct MSC;
 
-    /// MTU // Maximum Transport Unit
+    /// Maximum Transport Unit
     pub struct MTU;
 
-    /// NAT // Network Address Translation
+    /// Network Address Translation
     pub struct NAT;
 
-    /// NDP // Neighbour Discovery Protocol
+    /// Neighbour Discovery Protocol
     pub struct NDP;
 
-    /// NL // Network Layer
+    /// Network Layer
     pub struct NL;
 
-    /// OSI // Open Systems Interconnection
+    /// Open Systems Interconnection
     pub struct OSI;
 
-    /// PC // Personal Computer
+    /// Personal Computer
     pub struct PC;
 
-    /// PKI // Public Key Infrastructure
+    /// Public Key Infrastructure
     pub struct PKI;
 
-    /// SA // Source Address
+    /// Source Address
     pub struct SA;
 
-    /// SAP // Service Access Point
+    /// Service Access Point
     pub struct SAP;
 
-    /// SDU // Service Data Unit
+    /// Service Data Unit
     pub struct SDU;
 
-    /// SF // Single Frame
+    /// Single Frame
     pub struct SF;
 
-    /// SPN // Suspect Parameter Number
+    /// Suspect Parameter Number
     pub struct SPN;
 
-    /// SPP // Service Primitive Parameter
+    /// Service Primitive Parameter
     pub struct SPP;
 
-    /// TA // Target Address
+    /// Target Address
     pub struct TA;
 
-    /// TCP // Transmission Control Protocol
+    /// Transmission Control Protocol
     pub struct TCP;
 
-    /// TL // Transport Layer
+    /// Transport Layer
     pub struct TL;
 
-    /// TLS // Transport Layer Security
+    /// Transport Layer Security
     pub struct TLS;
 
-    /// UDP // User Datagram Protocol
+    /// User Datagram Protocol
     pub struct UDP;
 
-    /// VIN // Vehicle Identification Number
+    /// Vehicle Identification Number
     pub struct VIN;
 
-    /// VM // Vehicle Manufacturer
+    /// Vehicle Manufacturer
     pub struct VM;
 
-    /// WLAN // Wireless Local Area Network
+    /// Wireless Local Area Network
     pub struct WLAN;
 
-    /// XOR // Exclusive Or;
+    /// Exclusive Or;
     pub struct XOR;
 
     pub enum Symbols {
@@ -244,5 +244,91 @@ pub mod abbreviated_terms {
         Y,
         /// `<z>` Number of individual vehicle external network nodes.
         Z,
+    }
+}
+
+/// Vehicle Identification for ISO 13400
+pub mod vehicle_identification {
+    /// Vehicle identification parameter values
+    pub enum VehicleIdParamValues {
+        /// `[u8; 17]`
+        VIN,
+
+        /// `[u8; 2]`
+        LogicalAddress,
+
+        /// `[u8; 6]`
+        EID,
+
+        /// `[u8; 6]`
+        GID,
+    }
+
+    /// Payload type vehicle identification request message - No message parameters
+    pub struct VehicleIdReqMsg;
+
+    ///Payload type vehicle identification request message with EID
+    pub struct VehicleIdReqMsgEID {
+        /// **Description**: This is the DoIP entity's unique ID (e.g. network interface's MAC address) that shall respond to the vehicle identification request message.
+        ///
+        /// **Values**: If MAC address is used, it shall be in accordance with IEEE EUI-48.
+        ///
+        /// **Support Condition**: Mandatory.
+        pub EID: [u8; 6],
+    }
+
+    /// Payload type vehicle identification request message with VIN
+    pub struct VehicleIdReqMsgVIN {
+        /// **Description**: This is the vehicle's identification number as specified in ISO 3779. This parameter is only present if the client DoIP entity intends to identify the DoIP entities of an individual vehicle, the VIN of which is known to the client DoIP entity.
+        ///
+        /// **Values**: ASCII.
+        ///
+        /// **Support Condition**: Mandatory.
+        pub VIN: [u8; 17],
+    }
+
+    /// Payload type vehicle announcement/identification response message
+    pub struct VehicleAnnouncementResMsg {
+        /// **Description**: This is the vehicle's VIN as specified in ISO 3779. If the VIN is not configured at the time of transmission of this message, this should be indicated using the invalidity value. In this case the GID is used to associate DoIP nodes with a certain vehicle.
+        ///
+        /// **Values**: TODO
+        ///
+        /// **Support Condition**: Mandatory.
+        pub VIN: [u8; 17],
+
+        /// **Description**: This is the logical address that is assigned to the responding DoIP entity. The logical address can be used, for example, to address diagnostic requests directly to the DoIP entity.
+        ///
+        /// **Values**: TODO
+        ///
+        /// **Support Condition**: Mandatory.
+        pub LogicalAddress: [u8; 2],
+
+        /// **Description**: This is a unique identification of the DoIP entities in order to separate their responses even before the VIN is programmed to or recognised by the DoIP devices (e.g. during the vehicle assembly process). It is recommended that the MAC address information of the DoIP entity's network interface be used (one of the interfaces if multiple network interfaces are implemented).
+        ///
+        /// **Values**: If MAC address is used, it shall be in accordance with IEEE EUI-48.
+        ///
+        /// **Support Condition**: Mandatory.
+        pub EID: [u8; 6],
+
+        /// **Description**: This is a unique identification of the DoIP entities within the same vehicle in teh case that a VIN is not configured for that vehicle. The VIN/GID synchronisation process between DoIP nodes of a vehicle is defined. If the GID is not available at the time of transmission of this message, this shall be indicated using the specific invalidity value.
+        ///
+        /// **Values**: TODO
+        ///
+        /// **Support Condition**: Mandatory.
+        pub GID: [u8; 6],
+
+        /// **Description**: This is the additional information to notify the client DoIP entity that there are either DoIP entities with no initial connectivity or that a centralised security approach is used.
+        ///
+        /// **Values**: TODO
+        ///
+        /// **Support Condition**: Mandatory.
+        pub FurtherActionRequires: [u8; 1],
+
+        /// **Description**: This is the additional information to notify the client DoIP entity that all DoIP entities have synchronised their information about the VIN or GID of the vehicle.
+        ///
+        /// **Values**: TODO
+        ///
+        /// **Support Condition**: Optional.
+        pub VINGIDSyncStatus: [u8; 1],
     }
 }
