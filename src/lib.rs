@@ -250,20 +250,6 @@ pub mod abbreviated_terms {
 /// Vehicle Identification for ISO 13400
 pub mod vehicle_identification {
     /// Vehicle identification parameter values
-    pub enum VehicleIdParamValues {
-        /// `[u8; 17]`
-        VIN,
-
-        /// `[u8; 2]`
-        LogicalAddress,
-
-        /// `[u8; 6]`
-        EID,
-
-        /// `[u8; 6]`
-        GID,
-    }
-
     /// Payload type vehicle identification request message - No message parameters
     pub struct VehicleIdReqMsg;
 
@@ -330,5 +316,82 @@ pub mod vehicle_identification {
         ///
         /// **Support Condition**: Optional.
         pub VINGIDSyncStatus: [u8; 1],
+    }
+
+    /// Definition of further action code values
+    pub enum FurtherActionValues {
+        /// `0x00`
+        /// Support: Mandatory
+        NoFurtherActionRequired,
+
+        /// `0x01 to 0x0f`
+        /// Support: Mandatory
+        Reserved,
+
+        /// `0x10`
+        /// Support: Optional
+        RoutingActivationRequired,
+
+        /// `0x11 to 0xff`
+        /// Support: Optional
+        AvailableForVM,
+    }
+
+    /// Definition of VIN/GID synchronisation status code values
+    pub enum VINGIDSyncStatusValues {
+        /// `0x00`
+        /// Support: Mandatory
+        VINGIDSynchronised,
+
+        /// `0x01 to 0x0f`
+        /// Support: Mandatory
+        ReservedLow,
+
+        /// `0x10`
+        /// Support: Mandatory
+        VINGIDNotSynchronised,
+
+        /// `0x11 to 0xff`
+        /// Support: Mandatory
+        ReservedHigh,
+    }
+
+    /// Vehicle identification parameter values (value not set)
+    pub enum VehicleIdParamValues {
+        /// `[u8; 17]`
+        VIN,
+
+        /// `[u8; 2]`
+        LogicalAddress,
+
+        /// `[u8; 6]`
+        EID,
+
+        /// `[u8; 6]`
+        GID,
+    }
+}
+
+// Diagnostic Power Mode for ISO 13400
+pub mod diagnostic_power_mode {
+    /// Diagnostic power mode information request
+    pub struct DiagnosticPowerModeReq;
+
+    /// Diagnostic power mode information response
+    pub struct DiagnosticPowerModeRes {
+        /// **Description**: Identifies whether or not the vehicle is in diagnostic power mode and ready to perform reliable diagnostics.
+        ///
+        /// **Values**:
+        ///
+        ///     0x00: not ready
+        ///
+        ///     0x01: ready
+        ///
+        ///     0x02: not supported
+        ///
+        ///     0x03 to 0xff: reserved
+        ///
+        /// **Support Condition**: Mandatory.
+        pub DiagnosticPowerMode: [u8; 1],
     }
 }
